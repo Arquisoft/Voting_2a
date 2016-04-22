@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head"></head>
+<body>
+	<div th:replace="fragments/header :: cabecera">
+		<p>Bienvenido a la gestión de votos y recuento</p>
+	</div>
+	
+	<ul>
+		<li><a href="online?idEleccion=1">Ver recuento online</a></li>
+		<li><a href="recuento?idEleccion=1">Comenzar Recuento</a></li>
+		<li><a href="estadisticas?idEleccion=1">Ver estadísticas del recuento</a></li>
+	</ul>
+</body>
+</html>

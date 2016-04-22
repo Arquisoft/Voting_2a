@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head"></head>
+<body>
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<div th:replace="fragments/header :: cabecera"></div>
+
+	<h2>Estadisticas del recuento</h2>
+	<p>
+		¿No hay resultados? eso es debido a que no se ha lanzado el recuento
+		previo. Puede realizarlo ahora si lo desesa: <a
+			href="recuento?idEleccion=1">Comenzar Recuento</a>.
+	</p>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Elección</th>
+				<th>Opcion</th>
+				<th>Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="r : ${recuento}">
+				<td th:text="${{r.eleccion}}"></td>
+				<td th:text="${{r.opcion}}"></td>
+				<td th:text="${{r.total}}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+	<div id="canvas-holder">
+		<canvas id="chart-area" width="300" height="300" />
+	</div>
+
+	<script>
+		$.ajax({
+			type : "GET",
+			url : "http://localhost:8080/recuento/pie?idEleccion=1",
+
+			contentType : "application/json; charset=utf-8",
+			dataType : "json",
+			success : OnSuccess_,
+			error : OnErrorCall_
+		});
+
+		function OnSuccess_(response) {
+
+			var arr = [];
+			$.each(response, function(inx, val) {
+				var obj = {};
+				obj.value = val.value;
+				obj.label = val.label;
+				arr.push(obj);
+			});
+
+			var ctx = document.getElementById("chart-area").getContext("2d");
+			window.myPie = new Chart(ctx).Pie(arr);
+		}
+
+		function OnErrorCall_(response) {
+			alert(response);
+		}
+	</script>
+
+
+
+	<div th:replace="fragments/back :: back"></div>
+</body>
+</html>

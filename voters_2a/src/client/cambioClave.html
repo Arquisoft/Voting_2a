@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html ng-app="votersModule">
+ 
+	<head>
+		<meta charset="utf-8">
+  		<title>Voters 2a</title>
+
+    	<script type="text/javascript" src="js/angular.min.js"></script>
+    	<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+ 
+	<body ng-controller="votersController">
+		<h1>Voters 2a</h1>
+		<p>Introduzca el usuario y la contraseña que se le genere una nueva clave:</p>
+		
+		<form ng-submit="cambiarClave()">
+			<p>Email <span style="color:red">*</span> <input type="text" placeholder="Introduzca su usuario" ng-model="datosFormulario.login" required></p>
+			<p>Clave <span style="color:red">*</span> <input type="password" placeholder="Introduzca su clave" ng-model="datosFormulario.password" required></p>
+			
+			<p>
+				<button type="submit">Cambiar clave</button>
+			</p>
+		</form>		
+		
+		<p><a href="index.html">Consultar mesa</a></p>
+		
+		<div ng-show="ok">
+			<p>Su nueva clave es: {{respuesta.password}}</p>
+		</div>
+		<div ng-show="ko">
+			<p><span style="color:red">Usuario y/o clave incorrectos.</span></p>
+		</div>
+
+		<small>
+			<p>Datos de ejemplo (usuario / clave):</p>
+			<ul>
+				<li>adrian@gmail.com / 123456</li>
+				<li>dani@gmail.com / 454545</li>
+				<li>eduardo@gmail.com / 789878</li>
+			</ul>
+		</small>
+	</body>
+ 
+</html>

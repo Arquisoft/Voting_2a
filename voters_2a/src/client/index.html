@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html ng-app="votersModule">
+ 
+	<head>
+		<meta charset="utf-8">
+  		<title>Voters 2a</title>
+
+    	<script type="text/javascript" src="js/angular.min.js"></script>
+    	<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+ 
+	<body ng-controller="votersController">
+		<h1>Voters 2a</h1>
+		<p>Introduzca el usuario y la contraseña para conocer si puede votar y su mesa electoral:</p>
+		
+		<form ng-submit="autenticar()">
+			<p>Email <span style="color:red">*</span> <input type="text" placeholder="Introduzca su usuario" ng-model="datosFormulario.login" required></p>
+			<p>Clave <span style="color:red">*</span> <input type="password" placeholder="Introduzca su clave" ng-model="datosFormulario.password" required></p>
+			
+			<p>
+				<button type="submit">Consultar información</button>
+			</p>
+		</form>
+		
+		<p><a href="cambioClave.html">¿Quiere que se le genere una nueva clave?</a></p>
+		
+		<div ng-show="ok">
+			<p>Sus datos son los siguientes:</p>
+			<ul>
+				<li>Nombre: {{respuesta.name}}</li>
+				<li>NIF: {{respuesta.nif}}</li>
+				<li>Email: {{respuesta.email}}</li>
+				<li>Mesa: {{respuesta.pollingStationCode}}</li>
+			</ul>
+		</div>
+		<div ng-show="ko">
+			<p><span style="color:red">Según los datos proporcionados, no puede participar en la votación.</span></p>
+		</div>
+		
+		<small>
+			<p>Datos de ejemplo (usuario / clave):</p>
+			<ul>
+				<li>adrian@gmail.com / 123456</li>
+				<li>dani@gmail.com / 454545</li>
+				<li>eduardo@gmail.com / 789878</li>
+			</ul>
+		</small>
+	</body>
+ 
+</html>
