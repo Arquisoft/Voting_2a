@@ -16,3 +16,5 @@ Fecha: 21/febrero/2016 01:29:03 Causa: Email correo1@mail.es mal formado al leer
 Fecha: 21/febrero/2016 01:29:03 Causa: Email correo3 mal formado al leer fichero testDB
 Fecha: 21/febrero/2016 01:30:12 Causa: Email correo1@mail.es mal formado al leer fichero testDB
 Fecha: 21/febrero/2016 01:30:12 Causa: Email correo3 mal formado al leer fichero testDB
+Fecha: 22/abril/2016 01:12:00 Causa: Email correo1@mail.es mal formado al leer fichero testDB
+Fecha: 22/abril/2016 01:12:00 Causa: Email correo3 mal formado al leer fichero testDB
