@@ -9,5 +9,7 @@ Voting System
 # Authors
 
 * Adrián Iglesias García
+* Darío Suárez Menéndez
+* Victor Retortillo Fernandez
 * Jose Labra
 
