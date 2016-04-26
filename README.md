@@ -8,6 +8,7 @@ Voting System
 
 # Authors
 
+* Adrián Iglesias Garcia
 * Jose Labra
 
 
