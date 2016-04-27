@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head"></head>
+<body>
+	<div th:replace="fragments/header :: cabecera">
+		<p>Bienvenido a la gestión de votos y recuento</p>
+	</div>
+	
+	<form action="/GetVoterInfo" method="POST">
+		Usuario: <input type="text" name="u"/><br />
+		Pasword: <input type="text" name="p"/><br /><br />
+		
+		<input type="submit" />
+	</form>
+</body>
+</html>
