@@ -14,3 +14,4 @@ Voting System
 * Daniel Arango Antón
 * Jose Labra
 
+# Unimos el proyecto voters_2a y VoteCounting_2a en un unico proyecto llamado VotersCounting_2a
