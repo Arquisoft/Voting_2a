@@ -11,5 +11,6 @@ Voting System
 * Adrián Iglesias García
 * Darío Suárez Menéndez
 * Victor Retortillo Fernandez
+* Daniel Arango Antón
 * Jose Labra
 
