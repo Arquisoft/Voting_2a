@@ -12,6 +12,7 @@ Voting System
 * Darío Suárez Menéndez
 * Victor Retortillo Fernandez
 * Daniel Arango Antón
+* Eduardo García Montañés
 * Jose Labra
 
 * Unimos el proyecto voters_2a y VoteCounting_2a en un unico proyecto llamado VotersCounting_2a
