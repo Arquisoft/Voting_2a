@@ -17,7 +17,7 @@ Voting System
 * ------------------------------------------------------------------
 
 # Como usar el proyecto VotersCounting_2a
-* crear una carpeta llamada práctica en c:
+* crear una carpeta llamada practica en c:(Está informacion tambien la podemos encontrar en el fichero application.properties que está en src/main/resources)
 * copiar el fichero voting.h2 que se encuentra en src/ddl a la carpeta práctica que tenemos en c:
 * En línea de comandos ejecutamos mvn spring.boot:run
 * accedemos a localhost:8080
