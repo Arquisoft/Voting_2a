@@ -26,6 +26,7 @@ public class VotadoJdbcDao implements VotadoDao {
 			ps=con.prepareStatement(QUERIES.getProperty("SAVE_VOTADO"));
 			ps.setLong(1, votado.getIdVotante());
 			ps.setLong(2, votado.getIdVotacion());
+			ps.setDate(3, new java.sql.Date (votado.getHaVotado().getTime()));
 			
 			ps.executeUpdate();
 			
