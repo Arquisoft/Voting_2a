@@ -1,6 +1,7 @@
 package es.uniovi.asw.persistence.impl;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -26,6 +27,7 @@ public class VotadoJdbcDao implements VotadoDao {
 			ps=con.prepareStatement(QUERIES.getProperty("SAVE_VOTADO"));
 			ps.setLong(1, votado.getIdVotante());
 			ps.setLong(2, votado.getIdVotacion());
+			ps.setDate(3, (Date) votado.getHaVotado());
 			
 			ps.executeUpdate();
 			

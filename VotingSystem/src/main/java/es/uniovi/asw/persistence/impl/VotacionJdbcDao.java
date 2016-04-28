@@ -1,6 +1,7 @@
 package es.uniovi.asw.persistence.impl;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -26,7 +27,8 @@ public class VotacionJdbcDao implements VotacionDao {
 			con=Jdbc.getConnection();
 			ps=con.prepareStatement(QUERIES.getProperty("SAVE_VOTACION"));
 			ps.setString(1, votacion.getDefinicion());
-			
+			ps.setDate(2, (Date) votacion.getFechaInicio());
+			ps.setDate(3, (Date) votacion.getFechaFin());
 			int num=ps.executeUpdate();
 			
 			return (num>0);
@@ -83,7 +85,7 @@ public class VotacionJdbcDao implements VotacionDao {
 			ps=con.prepareStatement(QUERIES.getProperty("FIND_TODAS_VOTACIONES"));
 			rs=ps.executeQuery();
 			while(rs.next()){
-				vot.add(new Votacion(rs.getLong("id"), rs.getString("DEFINICION")));
+				vot.add(new Votacion(rs.getLong("id"), rs.getString("DEFINICION"),rs.getDate(3),rs.getDate(4)));
 			}	
 		} catch (SQLException e) {
 			e.printStackTrace();
