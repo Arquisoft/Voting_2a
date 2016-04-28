@@ -27,8 +27,8 @@ public class VotacionJdbcDao implements VotacionDao {
 			con=Jdbc.getConnection();
 			ps=con.prepareStatement(QUERIES.getProperty("SAVE_VOTACION"));
 			ps.setString(1, votacion.getDefinicion());
-			ps.setDate(2, (Date) votacion.getFechaInicio());
-			ps.setDate(3, (Date) votacion.getFechaFin());
+			ps.setDate(2,(Date) votacion.getFechaInicio());
+			ps.setDate(3,(Date) votacion.getFechaFin());
 			int num=ps.executeUpdate();
 			
 			return (num>0);
