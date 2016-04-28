@@ -14,5 +14,10 @@ Voting System
 * Daniel Arango Antón
 * Eduardo García Montañés
 * Jose Labra
+* ------------------------------------------------------------------
 
-* Unimos el proyecto voters_2a y VoteCounting_2a en un unico proyecto llamado VotersCounting_2a
+# Como usar el proyecto VotersCounting_2a
+* crear una carpeta llamada práctica en c:
+* copiar el fichero voting.h2 que se encuentra en src/ddl a la carpeta práctica que tenemos en c:
+* En línea de comandos ejecutamos mvn spring.boot:run
+* accedemos a localhost:8080
