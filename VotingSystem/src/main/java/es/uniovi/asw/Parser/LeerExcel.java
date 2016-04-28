@@ -50,6 +50,7 @@ public class LeerExcel {
 	        Iterator<Cell> cellIterator = row.cellIterator();
 	        Usuario user= new Usuario();
 	        int cont=0;
+	        int contadorVoto = 0;
 
 	        while (cellIterator.hasNext()) {
 	            Cell cell = cellIterator.next();
@@ -107,7 +108,17 @@ public class LeerExcel {
 		                
 		            case Cell.CELL_TYPE_NUMERIC:
 		            	
-		            	user.setCodColElectoral((int)cell.getNumericCellValue());
+		            	if(contadorVoto == 0){
+		            		user.setCodColElectoral((int)cell.getNumericCellValue());
+		            		contadorVoto++;
+		            	}else {
+		            		int aux = (int)cell.getNumericCellValue();
+		            		if(aux == 0){
+		            			user.setVotoElectronico(true);
+		            		}else{
+		            			user.setVotoElectronico(false);
+		            		}
+		            	}
 		                break;
 		             default:
 		            	 break;
