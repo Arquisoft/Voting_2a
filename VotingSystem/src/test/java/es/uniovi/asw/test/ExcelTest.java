@@ -18,6 +18,8 @@ public class ExcelTest {
 		LeerExcel le = new LeerExcel();
 		List<Usuario> lista = le.leerFichero("./src/main/resources/test");
 		assertEquals(13, lista.size());
+		GenerarCarta gc = new GenerarCarta(lista);
+		gc.crearCarta();
 		
 		
 	}
