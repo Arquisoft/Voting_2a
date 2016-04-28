@@ -1,4 +1,4 @@
-package es.uniovi.asw.LoadUsers;
+package es.uniovi.asw;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import es.uniovi.asw.Parser.LeerExcel;
 /**
  * Clase que lanza la aplicacion
  */
-public class Main {
+public class LoadUsers {
 
 	public static void main(String[] args) {
 		

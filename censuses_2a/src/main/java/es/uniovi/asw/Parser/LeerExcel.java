@@ -40,6 +40,7 @@ public class LeerExcel {
 		FileInputStream fis = new FileInputStream(myFile);
 		List<Usuario> data = new ArrayList<Usuario>();
 	
+		@SuppressWarnings("resource")
 		XSSFWorkbook myWorkBook = new XSSFWorkbook (fis);
 		XSSFSheet mySheet = myWorkBook.getSheetAt(0);
 	 

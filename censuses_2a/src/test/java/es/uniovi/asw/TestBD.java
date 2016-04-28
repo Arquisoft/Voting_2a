@@ -24,8 +24,10 @@ public class TestBD {
 	}*/
 	
 	private static Usuario user ;
+	@SuppressWarnings("unused")
 	private static Usuario user1 ;
 	private static Usuario user2 ;
+	@SuppressWarnings("unused")
 	private static Usuario user3 ;
 	
 	@BeforeClass	
