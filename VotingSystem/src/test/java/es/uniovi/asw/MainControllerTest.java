@@ -67,14 +67,14 @@ public class MainControllerTest {
 
   @AfterClass
   public static void reset(){
-	  
+	  /*
 	  try {
 		Jdbc.reset();
 	} catch (InstantiationException | IllegalAccessException |
 			ClassNotFoundException | SQLException e) {
 		e.printStackTrace();
 	}
-	  
+	  */
   }
 	  
 	  
