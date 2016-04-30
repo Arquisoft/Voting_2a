@@ -2,13 +2,29 @@ package es.uniovi.asw.test;
 
 import static org.junit.Assert.*;
 
+import java.sql.SQLException;
+
+import org.junit.Before;
 import org.junit.Test;
 
 import es.uniovi.asw.factories.Factories;
 import es.uniovi.asw.model.ColegioElectoral;
+import es.uniovi.asw.persistence.Jdbc;
 
 public class ColegioElectoralTest {
 
+	 @Before
+	  public  void reset(){
+		 
+		 try {
+			Jdbc.reset();
+		} catch (InstantiationException | IllegalAccessException |
+				ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		 
+	  }
+	
 	@Test
 	public void test() {
 		ColegioElectoral c= new ColegioElectoral((long)1, (long)1, (long)1);

@@ -2,9 +2,12 @@ package es.uniovi.asw.test;
 
 import static org.junit.Assert.*;
 
+import java.sql.SQLException;
 
-
+import org.junit.Before;
 import org.junit.Test;
+
+import es.uniovi.asw.persistence.Jdbc;
 import es.uniovi.asw.presentacion.BeanColegioElectoral;
 import es.uniovi.asw.presentacion.BeanOpcion;
 import es.uniovi.asw.presentacion.BeanUsuarios;
@@ -13,6 +16,18 @@ import es.uniovi.asw.presentacion.BeanVotaciones;
 
 public class TestBeans {
 
+	 @Before
+	  public  void reset(){
+		 
+		 try {
+			Jdbc.reset();
+		} catch (InstantiationException | IllegalAccessException |
+				ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		 
+	  }
+	
 	@Test
 	public void test(){
 		

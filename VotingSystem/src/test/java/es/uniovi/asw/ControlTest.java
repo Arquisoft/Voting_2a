@@ -19,6 +19,7 @@ import es.uniovi.asw.test.VotacionTest;
 import es.uniovi.asw.test.VotadoTest;
 import es.uniovi.asw.test.VotoTest;
 
+
 @RunWith(Suite.class)
 @SuiteClasses( { CircunscripcionTest.class,
 	ColegioElectoralTest.class,
@@ -35,18 +36,6 @@ import es.uniovi.asw.test.VotoTest;
 	})
 public class ControlTest {
 
-	//@Test
-	//public static void test() {
-		
-		//TestSuite suite = new TestSuite("Test for com.chuidiang.ejemplos");
-	    // suite.addTestSuite();
-	    //  suite.addTest(ColegioElectoralTest.class);
-		//suite.addTestSuite(new CircunscripcionTest().getClass());
-		
-		//new ComunidadAutonomaTest();
-		//new OpcionTest();
 	
-		
-	//}
 
 }

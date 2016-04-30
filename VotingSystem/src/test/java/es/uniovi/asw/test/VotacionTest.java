@@ -2,15 +2,30 @@ package es.uniovi.asw.test;
 
 import static org.junit.Assert.*;
 
+import java.sql.SQLException;
 import java.util.Date;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import es.uniovi.asw.factories.Factories;
 import es.uniovi.asw.model.Votacion;
+import es.uniovi.asw.persistence.Jdbc;
 
 public class VotacionTest {
 
+	 @Before
+	  public  void reset(){
+		 
+		 try {
+			Jdbc.reset();
+		} catch (InstantiationException | IllegalAccessException |
+				ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		 
+	  }
+	
 	@Test
 	public void test() {
 		
