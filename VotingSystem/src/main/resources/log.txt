@@ -418,3 +418,43 @@ Fecha: 30/abril/2016 01:54:10 Causa: Email molina.com mal formado al leer ficher
 Fecha: 30/abril/2016 01:54:10 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
 Fecha: 30/abril/2016 01:54:10 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
 Fecha: 30/abril/2016 01:54:10 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: DNI 75603564m Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: Email victor@email. mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: DNI 12345678W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: Email arrobagmail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: DNI 87654321W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: Email llano@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: Email molina.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:09 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: DNI 75603564m Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: Email victor@email. mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: DNI 12345678W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: Email arrobagmail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: DNI 87654321W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: Email llano@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: Email molina.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:09:34 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: DNI 75603564m Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: Email victor@email. mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: DNI 12345678W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: Email arrobagmail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: DNI 87654321W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: Email llano@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: Email molina.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:10:28 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: DNI 75603564m Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: Email victor@email. mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: DNI 12345678W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: Email arrobagmail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: DNI 87654321W Incorrecto al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: Email llano@mail.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: Email molina.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
+Fecha: 30/abril/2016 02:11:05 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
