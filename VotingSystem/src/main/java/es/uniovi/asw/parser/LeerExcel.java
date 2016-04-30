@@ -1,4 +1,4 @@
-package es.uniovi.asw.Parser;
+package es.uniovi.asw.parser;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,10 +12,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
-import es.uniovi.asw.WriteReport.Log;
 import es.uniovi.asw.factories.Factories;
 import es.uniovi.asw.model.Usuario;
+import es.uniovi.asw.writeReport.Log;
 
 /**
  * Clase para leer el fichero excel

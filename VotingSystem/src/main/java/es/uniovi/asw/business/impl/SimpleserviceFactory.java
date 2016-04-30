@@ -1,6 +1,5 @@
 package es.uniovi.asw.business.impl;
 
-import es.uniovi.asw.WriteReport.Log;
 import es.uniovi.asw.business.CircunscripcionService;
 import es.uniovi.asw.business.ColegioElectoralService;
 import es.uniovi.asw.business.ComunidadAutonomaService;
@@ -11,6 +10,7 @@ import es.uniovi.asw.business.UsuarioService;
 import es.uniovi.asw.business.VotacionService;
 import es.uniovi.asw.business.VotadoService;
 import es.uniovi.asw.business.VotoService;
+import es.uniovi.asw.writeReport.Log;
 
 public class SimpleserviceFactory implements ServiceFactory {
 

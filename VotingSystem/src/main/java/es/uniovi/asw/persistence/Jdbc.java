@@ -165,13 +165,13 @@ public class Jdbc {
 		
 		for(String query: listaQueries){
 		
-			crearTabla(query);
+			ejecutarQuery(query);
 			
 		}
 		
 	}
 	
-	private static void crearTabla(String createTables)
+	private static void ejecutarQuery(String createTables)
 			throws SQLException, InstantiationException,
 			IllegalAccessException, ClassNotFoundException {
 		
@@ -207,6 +207,30 @@ public class Jdbc {
 		
 		return QUERIES;
 		
+	}
+	
+	public static void reset() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException{
+		
+		crearDB();
+		
+		/*
+		List<String> listaQueries= new ArrayList<String>();
+				
+		listaQueries.add(QUERIES.getProperty("VACIAR_USERS"));
+		listaQueries.add(QUERIES.getProperty("VACIAR_COLELECTORAL"));
+		listaQueries.add(QUERIES.getProperty("VACIAR_VOTACIONES"));
+		listaQueries.add(QUERIES.getProperty("VACIAR_VOTOS"));
+		listaQueries.add(QUERIES.getProperty("VACIAR_HANVOTADO"));
+		listaQueries.add(QUERIES.getProperty("VACIAR_OPCIONES"));
+		listaQueries.add(QUERIES.getProperty("VACIAR_COMUNIDADESAUTONOMAS"));
+		listaQueries.add(QUERIES.getProperty("VACIAR_CIRCUNSCRIPCIONES"));
+		
+		for(String query: listaQueries){
+			
+			ejecutarQuery(query);
+			
+		}		
+		*/
 	}
 	
 }

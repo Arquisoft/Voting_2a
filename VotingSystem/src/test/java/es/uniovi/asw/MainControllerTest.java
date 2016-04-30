@@ -4,6 +4,10 @@ import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.sql.SQLException;
+
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,6 +19,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+
+import es.uniovi.asw.persistence.Jdbc;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -59,4 +65,19 @@ public class MainControllerTest {
   
   }
 
+  @AfterClass
+  public static void reset(){
+	  
+	  try {
+		Jdbc.reset();
+	} catch (InstantiationException | IllegalAccessException |
+			ClassNotFoundException | SQLException e) {
+		e.printStackTrace();
+	}
+	  
+  }
+	  
+	  
+  
+  
 }

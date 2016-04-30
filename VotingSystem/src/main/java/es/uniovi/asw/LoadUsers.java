@@ -4,10 +4,10 @@ import java.io.IOException;
 
 import java.util.List;
 
-import es.uniovi.asw.Parser.GenerarCarta;
-import es.uniovi.asw.Parser.LeerExcel;
 import es.uniovi.asw.factories.Factories;
 import es.uniovi.asw.model.Usuario;
+import es.uniovi.asw.parser.GenerarCarta;
+import es.uniovi.asw.parser.LeerExcel;
 
 
 /**

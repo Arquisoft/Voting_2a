@@ -7,9 +7,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import es.uniovi.asw.Parser.GenerarCarta;
-import es.uniovi.asw.Parser.LeerExcel;
 import es.uniovi.asw.model.Usuario;
+import es.uniovi.asw.parser.GenerarCarta;
+import es.uniovi.asw.parser.LeerExcel;
 
 public class ExcelTest {
 
