@@ -17,13 +17,13 @@
 ## ¿Qué es?
 Es la union de los proyectos censuses_2a, voter_2a,VoteCounting_2a y VotingSystem_2a en un unico proyecto desarrollado por el equipo 2a
 
-### Cómo se ejecuta
+## Cómo se ejecuta
 
-### requerimientos previos
+#### requerimientos previos
 1. Java 1.8 instalada y configurada en el path
 2. Maven 3 instalado y configurado en el path
 
-### Ejecución
+#### Ejecución
 1. Descarga del proyecto
 2. Acceso al directorio del proyecto
 3. Ejecutar mvn spring-boot:run
