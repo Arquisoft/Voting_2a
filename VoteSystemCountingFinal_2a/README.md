@@ -8,7 +8,12 @@ Voting System
 
 
 ## Authors
-
+* Adrián Iglesias García
+* Darío Suárez Menéndez
+* Victor Retortillo Fernandez
+* Daniel Arango Antón
+* Eduardo García Montañés
+* Jose Labra
 
 ## ¿Qué es?
 
