@@ -7,5 +7,27 @@ Voting System
 [![codecov.io](https://codecov.io/github/Arquisoft/VotingSystem/coverage.svg?branch=master)](https://codecov.io/github/Arquisoft/VotingSystem?branch=master)
 
 
-# Authors
+## Authors
+
+
+## ¿Qué es?
+
+
+## Cómo se ejecuta
+
+### requerimientos previos
+1. Java 1.8 instalada y configurada en el path
+2. Maven 3 instalado y configurado en el path
+
+### Ejecución
+1. Descarga del proyecto
+2. Acceso al directorio del proyecto
+3. Ejecutar mvn spring-boot:run
+4. Esperar a que ejecute. En la consola aparecerá el mensaje 'Started Application in ...'
+5. Acceder a http://localhost:8080
+6. Seguir las instrucciones de la página
+7. En caso de ejecutar la aplicación y no ver usuarios con los que autenticar, será necesario pararla y volver a ejecutar todo desde el paso 3. Se debe a que en el arranque inicial no se pudo copiar todo lo necesario en la base de datos.
+
+
+
 
