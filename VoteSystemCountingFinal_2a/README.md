@@ -1,6 +1,5 @@
 # Voting System & Censuses
-
-# Voting System & Censuses
+ Voting System & Censuses
 
 [![Build Status](https://travis-ci.org/Arquisoft/VotingSystem_2a.svg?branch=master)](https://travis-ci.org/Arquisoft/VotingSystem)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/fd857e92583544eb94491a505f0200a0)](https://www.codacy.com/app/jelabra/VotingSystem)
@@ -18,7 +17,7 @@
 ## ¿Qué es?
 Es la union de los proyectos censuses_2a, voter_2a,VoteCounting_2a y VotingSystem_2a en un unico proyecto desarrollado por el equipo 2a
 
-## Cómo se ejecuta
+### Cómo se ejecuta
 
 ### requerimientos previos
 1. Java 1.8 instalada y configurada en el path
