@@ -1,19 +1,21 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments/header :: head"></head>
+<head th:replace="fragments/header :: head">
+<meta charset="UTF-8" />
+</head>
 <body>
 	<script src="js/jquery-1.12.2.min.js"></script>
 	<script src="js/Chart.min.js"></script>
 	<div th:replace="fragments/header :: cabecera"></div>
 
-	<h2>Estadísticas del recuento</h2>
-	<p>Estado de la votación tras recuento.</p>
+	<h2>EstadÃ­sticas del recuento</h2>
+	<p>Estado de la votaciÃ³n tras recuento.</p>
 
 	<table border="1">
 		<thead>
 			<tr>
-				<th>Elección</th>
-				<th>Opción</th>
+				<th>ElecciÃ³n</th>
+				<th>OpciÃ³n</th>
 				<th>Total</th>
 			</tr>
 		</thead>

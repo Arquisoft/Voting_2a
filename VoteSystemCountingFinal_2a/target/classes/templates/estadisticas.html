@@ -3,16 +3,16 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <meta http-equiv="refresh" content="5" />
 <head th:replace="fragments/header :: head">
-
+<meta charset="UTF-8" />
 </head>
 
 <body>
 	<div th:replace="fragments/header :: cabecera"></div>
 
-	<h2>Indique la elección de la que se busca consultar sus estadísticas:</h2>
+	<h2>Indique la elecciÃ³n de la que se busca consultar sus estadÃ­sticas:</h2>
 
 	<form action="/estadisticas" method="POST">
-		ID Elección: <input type="text" name="idEleccion"/>
+		ID ElecciÃ³n: <input type="text" name="idEleccion"/>
 		<input type="submit" />
 	</form>
 

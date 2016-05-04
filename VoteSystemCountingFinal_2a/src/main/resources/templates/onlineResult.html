@@ -3,20 +3,20 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <meta http-equiv="refresh" content="120" />
 <head th:replace="fragments/header :: head">
-
+<meta charset="UTF-8" />
 </head>
 
 <body>
 	<div th:replace="fragments/header :: cabecera"></div>
 
-	<h2>Resultado de la votación online</h2>
+	<h2>Resultado de la votaciÃ³n online</h2>
 
 	<p>
 		La siguiente tabla muestra los votos escrutados hasta el momento.
-		Dicha tabla se actualiza de forma automática cada '120' segundos ('2' minutos).
+		Dicha tabla se actualiza de forma automÃ¡tica cada '120' segundos ('2' minutos).
 	</p>
 	<p>
-		Útima actualización a las 
+		Ãštima actualizaciÃ³n a las 
 		<script type="text/javascript"> 
 			var d = new Date(); 
 			document.write(d.getDate() + "/" + (d.getMonth() +1) + "/" + d.getFullYear(), ', '+d.getHours(),':'+d.getMinutes(),':'+d.getSeconds()); 
@@ -26,10 +26,10 @@
 	<table border="1">
 		<thead>
 			<tr>
-				<th>Nº</th>
-				<th>Elección</th>
+				<th>NÂº</th>
+				<th>ElecciÃ³n</th>
 				<th>Colegio</th>
-				<th>Opción</th>
+				<th>OpciÃ³n</th>
 				<th>Online</th>
 			</tr>
 		</thead>

@@ -1,19 +1,20 @@
 
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <meta http-equiv="refresh" content="5" />
 <head th:replace="fragments/header :: head">
-
+<meta charset="UTF-8" />
 </head>
 
 <body>
 	<div th:replace="fragments/header :: cabecera"></div>
 
-	<h2>Indique la elección a consultar online:</h2>
+	<h2>Indique la elecciÃ³n a consultar online:</h2>
 
 	<form action="/online" method="POST">
-		ID Elección: <input type="text" name="idEleccion"/>
-		<input type="submit" />
+		ID ElecciÃ³n: <input type="text" name="idEleccion" /> <input
+			type="submit" />
 	</form>
 
 	<h2>Elecciones disponibles</h2>
@@ -31,7 +32,7 @@
 			</tr>
 		</tbody>
 	</table>
-	
+
 	<div th:replace="fragments/back :: back"></div>
 </body>
 </html>

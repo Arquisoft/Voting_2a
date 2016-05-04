@@ -1,18 +1,19 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments/header :: head"></head>
+<head th:replace="fragments/header :: head">
+<meta charset="UTF-8" />
+</head>
 <body>
 	<div th:replace="fragments/header :: cabecera">
-		<p>Bienvenido a la gestión de votos y recuento</p>
+		<p>Bienvenido a la gestiÃ³n de votos y recuento</p>
 	</div>
-	
+
 	<form action="/GetVoterInfo" method="POST">
-		Usuario: <input type="text" name="u"/><br />
-		Password: <input type="password" name="p"/><br /><br />
-		
-		<input type="submit" />
+		Usuario: <input type="text" name="u" /><br /> Password: <input
+			type="password" name="p" /><br />
+		<br /> <input type="submit" />
 	</form>
-	
+
 	<h2>Usuarios del sistema</h2>
 	<table border="1">
 		<thead>
@@ -30,7 +31,7 @@
 			</tr>
 		</tbody>
 	</table>
-	
+
 	<div th:replace="fragments/back :: back"></div>
 </body>
 </html>
