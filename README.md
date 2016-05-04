@@ -13,3 +13,5 @@ Voting System
 * Daniel Arango Antón
 * Eduardo García Montañés
 * Jose Labra
+
+Proyecto final que unifica y engloba los demás en la carpeta 'VoteSystemCountingFinal_2a'
