@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="header" th:fragment="cabecera" align="center">
-		<h2>Crear Votacion</h2>
+		<h2>Crear Votación</h2>
 		<hr />
 
 		<form id="crear_votacion" 
@@ -16,7 +16,7 @@
 		th:action="@{/crearVotacion}" 
 		method="post">
 
-			<label>Fecha de incio:</label>
+			<label>Fecha de inicio:</label>
 			<input id="fechaInicio" type="text" th:field="*{fechaInicio}" placeholder="dd/mm/yyyy hh:mm"/>
 			
 			<br/>
@@ -26,13 +26,13 @@
 			
 			<br/>
 			
-			<label>Descripcion:</label>
+			<label>Descripción:</label>
 			<input id="descripcion" type="text" th:field="*{descripcion}"/>
 			
 			<br/>
 			
 			<label>Opciones:</label>
-			<input id="opciones" type="text" th:field="*{opciones}"/>* introducir opciones eparadas por ;
+			<input id="opciones" type="text" th:field="*{opciones}"/>* Introducir opciones separadas por ';' (sin comillas)
 			
 			<br/>
 			

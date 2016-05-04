@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="header" th:fragment="cabecera" align="center">
-		<h2>Votacion</h2>
+		<h2>Votación</h2>
 		<hr />
 
 		<form id="crear_voto" 
@@ -16,7 +16,7 @@
 		th:action="@{/guardarVoto}" 
 		method="post">
 		
-		<h3>Lstado de Opciones</h3>
+		<h3>Listado de Opciones</h3>
 			<div th:each="opcion: ${opciones}" align="center">
 			
 				<h3 th:text="${opcion.id}+' '+${opcion.descripcion}"></h3>
@@ -25,7 +25,7 @@
 
 			<br/>
 			
-			<label>Inserte opcion elegida:</label>
+			<label>Inserte opción elegida:</label>
 			<input id="idOcion" type="text" th:field="*{idOpcion}"/>
 			
 			<br/>
