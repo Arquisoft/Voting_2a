@@ -7,3 +7,9 @@ Voting System
 [![codecov.io](https://codecov.io/github/Arquisoft/Voting_2a/coverage.svg?branch=master)](https://codecov.io/github/Arquisoft/Voting_2a?branch=master)
 
 # Authors
+* Adrián Iglesias García
+* Darío Suárez Menéndez
+* Victor Retortillo Fernandez
+* Daniel Arango Antón
+* Eduardo García Montañés
+* Jose Labra
