@@ -25,15 +25,14 @@ public class CountingController {
 
 	@Autowired
 	private EleccionService eleccionService;
-	
+
 	@Autowired
 	private VotoService votoService;
 
 	@Autowired
 	private RecuentoService recuentoService;
 
-	private static final Logger LOG = LoggerFactory
-			.getLogger(CountingController.class);
+	private static final Logger LOG = LoggerFactory.getLogger(CountingController.class);
 
 	@RequestMapping(value = "/online", method = RequestMethod.POST)
 	public ModelAndView verResultadosOnline(Long idEleccion) {
@@ -41,22 +40,18 @@ public class CountingController {
 		List<VotoRest> votos = new ArrayList<VotoRest>();
 
 		try {
-			List<VotoInfo> votosModel = this.votoService
-					.obtenerVotos(idEleccion);
+			List<VotoInfo> votosModel = this.votoService.obtenerVotos(idEleccion);
 
 			if (votosModel != null && votosModel.size() > 0) {
 				VotoRest voto = null;
 				for (VotoInfo v : votosModel) {
-					voto = new VotoRest(v.getIdEleccion(), v.getIdColegio(),
-							v.getOpcion(), v.isOnline());
+					voto = new VotoRest(v.getIdEleccion(), v.getIdColegio(), v.getOpcion(), v.isOnline());
 					votos.add(voto);
 				}
 			}
 		} catch (Exception e) {
-			LOG.error("Error al recuperar votos, no existe dicha idEleccion "
-					+ e);
-			return new ModelAndView("error", "error",
-					"Error al recuperar votos " + e);
+			LOG.error("Error al recuperar votos, no existe dicha idEleccion " + e);
+			return new ModelAndView("error", "error", "Error al recuperar votos " + e);
 		}
 
 		return new ModelAndView("onlineResult", "votos", votos);
@@ -76,8 +71,7 @@ public class CountingController {
 			this.votoService.realizarRecuento(idEleccion);
 		} catch (Exception e) {
 			LOG.error("Error al realizar recuento " + e);
-			return new ModelAndView("error", "error",
-					"Error al realizar recuento " + e);
+			return new ModelAndView("error", "error", "Error al realizar recuento " + e);
 		}
 		return new ModelAndView("recuento");
 	}
@@ -86,8 +80,8 @@ public class CountingController {
 	public ModelAndView verEstadisticas(Long idEleccion) {
 		LOG.info("verEstadisticas page access");
 		try {
-		this.votoService.realizarRecuento(idEleccion);
-		}catch (Exception e) {
+			this.votoService.realizarRecuento(idEleccion);
+		} catch (Exception e) {
 			LOG.error("Error al recuperar recuento " + e);
 			return new ModelAndView("error", "error",
 					"No hay votos para realizar el recuento. Consulte este tras realizar alguna votación.");
@@ -98,14 +92,12 @@ public class CountingController {
 
 			RecuentoRest rec = null;
 			for (Recuento r : this.recuentoService.publicarRecuento(idEleccion)) {
-				rec = new RecuentoRest(r.getIdEleccion(), r.getOpcion(),
-						r.getTotal());
+				rec = new RecuentoRest(r.getIdEleccion(), r.getOpcion(), r.getTotal());
 				recuento.add(rec);
 			}
 		} catch (Exception e) {
 			LOG.error("Error al recuperar recuento " + e);
-			return new ModelAndView("error", "error",
-					"Error al recuperar recuento " + e);
+			return new ModelAndView("error", "error", "Error al recuperar recuento " + e);
 		}
 
 		return new ModelAndView("estadisticasResult", "recuento", recuento);
