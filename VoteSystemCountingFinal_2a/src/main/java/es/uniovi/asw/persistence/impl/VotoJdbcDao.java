@@ -24,6 +24,7 @@ public class VotoJdbcDao implements VotoDao {
 		try {
 
 			con = Jdbc.getConnection();
+			/*
 			ps = con.prepareStatement(QUERIES.getProperty("SAVE_VOTE"));
 
 			ps.setLong(1, voto.getIdOpcion());
@@ -31,26 +32,27 @@ public class VotoJdbcDao implements VotoDao {
 			ps.setLong(3, voto.getTotVotos());
 
 			int num = ps.executeUpdate();
-
+			*/
+			
 			ps2 = con
 					.prepareStatement("select definicion, codvotacion from opciones where id = ?");
 			ps2.setLong(1, voto.getIdOpcion());
 			ResultSet rs = ps2.executeQuery();
-			Long codVota = 0L;
+			//Long codVota = 0L;
 			String opcion = "";
 			while (rs.next()) {
 				opcion = rs.getString(1);
-				codVota = rs.getLong(2);
+				//codVota = rs.getLong(2);
 			}
 
 			ps3 = con
-					.prepareStatement("insert into voto (id_colegio, id_eleccion, online, opcion) values(?, ?, ?, ?)");
+					.prepareStatement(QUERIES.getProperty("SAVE_VOTE"));
 			ps3.setLong(1, voto.getIdColElect());
-			ps3.setLong(2, codVota);
+			ps3.setLong(2, voto.getIdOpcion());
 			ps3.setBoolean(3, true);
 			ps3.setString(4, opcion);
 
-			ps3.executeUpdate();
+			int num=ps3.executeUpdate();
 
 			return (num > 0);
 
@@ -64,7 +66,7 @@ public class VotoJdbcDao implements VotoDao {
 
 	}
 
-	public boolean update(Voto voto) {
+	/*public boolean update(Voto voto) {
 
 		Connection con = null;
 		PreparedStatement ps = null;
@@ -91,7 +93,7 @@ public class VotoJdbcDao implements VotoDao {
 		return false;
 
 	}
-
+*/
 	public boolean incrementarVoto(Voto voto) {
 
 		Connection con = null;
@@ -101,14 +103,16 @@ public class VotoJdbcDao implements VotoDao {
 		try {
 
 			con = Jdbc.getConnection();
+			/*
 			ps = con.prepareStatement(QUERIES.getProperty("UPDATE_VOTE"));
 
-			ps.setLong(1, voto.getTotVotos() + 1);
+			//ps.setLong(1, voto.getTotVotos() + 1);
 			ps.setLong(2, voto.getIdOpcion());
 			ps.setLong(3, voto.getIdColElect());
-
+			
 			int num = ps.executeUpdate();
-
+			*/
+			
 			ps2 = con
 					.prepareStatement("select definicion, codvotacion from opciones where id = ?");
 			ps2.setLong(1, voto.getIdOpcion());
@@ -127,7 +131,7 @@ public class VotoJdbcDao implements VotoDao {
 			ps3.setBoolean(3, true);
 			ps3.setString(4, opcion);
 
-			ps3.executeUpdate();
+			int num=ps3.executeUpdate();
 
 			return (num > 0);
 
@@ -159,8 +163,8 @@ public class VotoJdbcDao implements VotoDao {
 
 			if (rs.next()) {
 
-				Long totVotos = rs.getLong("totVotos");
-				voto = new Voto(idOpcion, idColElect, totVotos);
+				String opc = rs.getString("OPCION");
+				voto = new Voto(idOpcion, idColElect, opc);
 
 			}
 

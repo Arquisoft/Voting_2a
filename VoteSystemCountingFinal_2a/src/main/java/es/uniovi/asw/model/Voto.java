@@ -4,18 +4,19 @@ public class Voto {
 	
 	private Long idOpcion;
 	private Long idColElect;
-	private Long numVotos;
+	//private Long numVotos;
+	private String opcion;
 	
 	
 	public Voto(){
 		
 	};
 	
-	public Voto(Long idOpcion, Long idColElect, Long totVotos) {
+	public Voto(Long idOpcion, Long idColElect, String opcion) {
 
 		this.idOpcion = idOpcion;
 		this.idColElect = idColElect;
-		this.numVotos = totVotos;
+		this.opcion=opcion;
 		
 	}
 
@@ -42,18 +43,19 @@ public class Voto {
 		this.idColElect = idColElect;
 		
 	}
+
+	public String getOpcion() {
+		
+		return opcion;
 	
-	public Long getTotVotos() {
+	}
+
+	public void setOpcion(String opcion) {
 		
-		return numVotos;
-		
+		this.opcion = opcion;
+	
 	}
 	
-	public void setTotVotos(Long totVotos) {
-		
-		this.numVotos = totVotos;
-		
-	}
 	
 	
 }

@@ -193,14 +193,15 @@ public class Main {
 				v= new Voto();
 				v.setIdOpcion(op.getId());
 				v.setIdColElect((long)user.getCodColElectoral());
-				v.setTotVotos((long)1);
+				//v.setTotVotos((long)1);
 				
 				Factories.service.createVotoService().saveVoto(v);
 				
 			}else{
 				
-				Factories.service.createVotoService().incrementarVoto(v);
-				
+				//Factories.service.createVotoService().incrementarVoto(v);
+				Factories.service.createVotoService().saveVoto(v);
+
 			}
 			
 			Votado votado= new Votado(idVotacon, (long)user.getId());
@@ -313,23 +314,25 @@ public class Main {
 		if(op!=null && c!=null && !c.isVotoFisico()){
 			
 			Voto v =Factories.service.createVotoService().findById(op.getId(), (long)c.getId());
+			long tot=Long.valueOf(col.getNumVotos());
+			for(int i=0;i<tot;i++){
 			
 			if(v==null){
 				
 				v= new Voto();
 				v.setIdOpcion(op.getId());
 				v.setIdColElect((long)c.getId());
-				v.setTotVotos(Long.valueOf(col.getNumVotos()));
+				//v.setTotVotos(Long.valueOf(col.getNumVotos()));
 				
 				Factories.service.createVotoService().saveVoto(v);
 				
 			}else{
 				
-				v.setTotVotos(v.getTotVotos()+Long.valueOf(col.getNumVotos()));
-				Factories.service.createVotoService().update(v);
+				//v.setTotVotos(v.getTotVotos()+Long.valueOf(col.getNumVotos()));
+				Factories.service.createVotoService().saveVoto(v);
 				
 			}
-			
+			}
 			c.setVotoFisico(true);
 			Factories.service.createColegioElectoralService().update(c);
 			
