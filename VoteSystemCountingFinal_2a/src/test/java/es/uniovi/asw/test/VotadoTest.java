@@ -58,6 +58,11 @@ public class VotadoTest {
 		Votado pf2 = new Votado((long)1, (long)1, new Date());
 		assertEquals(new Date(), pf2.getHaVotado());
 		
+		Date fecha = new Date();
+		pf2.setHaVotado(fecha);
+		assertEquals(fecha, pf2.getHaVotado());
+		
+		
 	}
 
 }
