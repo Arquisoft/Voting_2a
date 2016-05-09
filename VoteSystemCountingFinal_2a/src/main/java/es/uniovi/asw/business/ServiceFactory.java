@@ -1,6 +1,6 @@
 package es.uniovi.asw.business;
 
-import es.uniovi.asw.writeReport.Log;
+import es.uniovi.asw.writereport.Log;
 
 public interface ServiceFactory {
 	

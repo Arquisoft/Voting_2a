@@ -1,4 +1,4 @@
-package es.uniovi.asw.writeReport;
+package es.uniovi.asw.writereport;
 
 /**
  * Interfaz para el uso de log

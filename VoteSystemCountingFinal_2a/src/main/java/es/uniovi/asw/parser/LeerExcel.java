@@ -14,7 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import es.uniovi.asw.factories.Factories;
 import es.uniovi.asw.model.Usuario;
-import es.uniovi.asw.writeReport.Log;
+import es.uniovi.asw.writereport.Log;
 
 /**
  * Clase para leer el fichero excel

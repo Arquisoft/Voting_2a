@@ -9,6 +9,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import es.uniovi.asw.LoadUsers;
 import es.uniovi.asw.model.Usuario;
 import es.uniovi.asw.parser.GenerarCarta;
 import es.uniovi.asw.parser.LeerExcel;
@@ -36,6 +37,7 @@ public class ExcelTest {
 		GenerarCarta gc = new GenerarCarta(lista);
 		gc.crearCarta();
 		
+		LoadUsers.main(new String[]{"test"});
 		
 	}
 }

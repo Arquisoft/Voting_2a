@@ -10,7 +10,7 @@ import es.uniovi.asw.business.UsuarioService;
 import es.uniovi.asw.business.VotacionService;
 import es.uniovi.asw.business.VotadoService;
 import es.uniovi.asw.business.VotoService;
-import es.uniovi.asw.writeReport.Log;
+import es.uniovi.asw.writereport.Log;
 
 public class SimpleserviceFactory implements ServiceFactory {
 

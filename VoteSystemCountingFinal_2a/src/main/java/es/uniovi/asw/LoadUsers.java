@@ -23,7 +23,7 @@ public class LoadUsers {
 		
 		try {
 			
-			List<Usuario> listaUsuarios=fichero.leerFichero("./src/test/resources/"+nombreFichero);
+			List<Usuario> listaUsuarios=fichero.leerFichero("./src/main/resources/"+nombreFichero);
 			Factories.service.createUsuarioService().generarUsuarios(listaUsuarios);
 
 			GenerarCarta gc = new GenerarCarta(listaUsuarios);

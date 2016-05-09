@@ -99,16 +99,18 @@ public class UserInfo extends AbstractPersistable<Long> {
 	}
 
 	public boolean emailCorrecto(String email) {
-		if (email != null)
-			if (email.contains("@") && !email.startsWith("@")
-					&& !email.endsWith("@"))
+		if (email != null && email.contains("@")
+				&& !email.startsWith("@")
+					&& !email.endsWith("@")){
 				return true;
+		}
 		return false;
 	}
 
 	public boolean nifCorrecto(String nif) {
-		if (nif != null && !nif.isEmpty())
-			if (nif.length() == 9 && Character.isLetter(nif.charAt(8)))
+		if (nif != null && !nif.isEmpty() && 
+				nif.length() == 9 && 
+				Character.isLetter(nif.charAt(8)))
 				return true;
 		return false;
 	}

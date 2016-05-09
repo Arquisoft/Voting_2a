@@ -1,4 +1,4 @@
-package es.uniovi.asw.writeReport;
+package es.uniovi.asw.writereport;
 
 import java.io.BufferedWriter;
 import java.io.File;
