@@ -508,3 +508,33 @@ Fecha: 09/mayo/2016 11:09:06 Causa: Email molina.com mal formado al leer fichero
 Fecha: 09/mayo/2016 11:09:06 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
 Fecha: 09/mayo/2016 11:09:06 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
 Fecha: 09/mayo/2016 11:09:06 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: DNI 75603564m Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: Email victor@email. mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: DNI 12345678W Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: Email arrobagmail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: DNI 87654321W Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: Email llano@mail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: Email molina.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:09:35 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: DNI 75603564m Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: Email victor@email. mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: DNI 12345678W Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: Email arrobagmail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: DNI 87654321W Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: Email llano@mail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: Email molina.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:26 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: DNI 75603564m Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: Email victor@email. mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: DNI 12345678W Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: Email arrobagmail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: DNI 87654321W Incorrecto al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: Email llano@mail.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: Email molina.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: Email lsgh@.com mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: Email a@.com.es mal formado al leer fichero test.xlsx
+Fecha: 09/mayo/2016 11:29:51 Causa: Email jesuuuuh@mail.com mal formado al leer fichero test.xlsx
