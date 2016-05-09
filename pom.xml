@@ -16,11 +16,12 @@
 	</parent>
 	
     <modules>
+    	<module>VoteSystemCountingFinal_2a</module>
     <!--  <module>censuses_2a</module>     -->
-    <module>voters_2a</module>
-    <module>VotingSystem</module>
-    <!--  <module>VotingSystem_2a</module> -->
-    <module>VoteCounting_2a</module>
+    <!-- <module>voters_2a</module> -->
+     <!-- <module>VotingSystem</module> -->
+     <!--  <module>VotingSystem_2a</module> -->
+     <!-- <module>VoteCounting_2a</module> -->
     </modules>
 
 	<dependencies>

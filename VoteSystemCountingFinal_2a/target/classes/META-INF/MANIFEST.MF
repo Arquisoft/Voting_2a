@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: VoteSystemCountingFinal_2a
 Implementation-Version: 1.0.0
-Built-By: Dani
+Built-By: dario
 Implementation-Vendor-Id: es.uniovi.asw
 Build-Jdk: 1.8.0_25
 Created-By: Maven Integration for Eclipse
