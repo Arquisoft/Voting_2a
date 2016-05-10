@@ -99,26 +99,23 @@ public class UserInfo extends AbstractPersistable<Long> {
 	}
 
 	public boolean emailCorrecto(String email) {
-		if (email != null && email.contains("@")
+		return (email != null && email.contains("@")
 				&& !email.startsWith("@")
-					&& !email.endsWith("@")){
-				return true;
-		}
-		return false;
+				&& !email.endsWith("@"));
 	}
 
 	public boolean nifCorrecto(String nif) {
-		if (nif != null && !nif.isEmpty() && 
+		 
+		return (nif != null && !nif.isEmpty() && 
 				nif.length() == 9 && 
-				Character.isLetter(nif.charAt(8)))
-				return true;
-		return false;
+				Character.isLetter(nif.charAt(8)));
+		
 	}
 
 	public boolean passwordCorrecta(String pass) {
-		if (pass != null && !pass.isEmpty())
-			return true;
-		return false;
+
+		return (pass != null && !pass.isEmpty());
+		
 	}
 
 	public String getLogin() {
