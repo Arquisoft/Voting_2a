@@ -6,7 +6,8 @@ Voting System
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/0a04e69b185a4b2d925b08af2fe788f4)](https://www.codacy.com/app/jelabra/Voting_2a)
 [![codecov.io](https://codecov.io/github/Arquisoft/Voting_2a/coverage.svg?branch=master)](https://codecov.io/github/Arquisoft/Voting_2a?branch=master)
 
-# Authors
+
+## Authors
 * Adrián Iglesias García
 * Darío Suárez Menéndez
 * Victor Retortillo Fernandez
@@ -14,4 +15,24 @@ Voting System
 * Eduardo García Montañés
 * Jose Labra
 
-Proyecto final que unifica y engloba los demás en la carpeta 'VoteSystemCountingFinal_2a'
+## ¿Qué es?
+Es la union de los proyectos censuses_2a, voter_2a,VoteCounting_2a y VotingSystem_2a en un unico proyecto desarrollado por el equipo 2a
+
+## Cómo se ejecuta
+
+#### requerimientos previos
+1. Java 1.8 instalada y configurada en el path
+2. Maven 3 instalado y configurado en el path
+
+#### Ejecución
+1. Descarga del proyecto
+2. Acceso al directorio del proyecto
+3. Ejecutar mvn spring-boot:run
+4. Esperar a que ejecute. En la consola aparecerá el mensaje 'Started Application in ...'
+5. Acceder a http://localhost:8080
+6. Seguir las instrucciones de la página
+7. En caso de ejecutar la aplicación y no ver usuarios con los que autenticar, será necesario pararla y volver a ejecutar todo desde el paso 3. Se debe a que en el arranque inicial no se pudo copiar todo lo necesario en la base de datos.
+
+
+
+
